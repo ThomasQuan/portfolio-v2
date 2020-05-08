@@ -10,9 +10,9 @@ $teal-color: #154042;
 
 $p-font-sizes: (
   null: 15px,
-  480px: 16px,
-  640px: 17px,
-  1024px: 19px,
+  480px: 17px,
+  640px: 20px,
+  1024px: 24px,
 );
 $h1-font-sizes: (
   null: 28px,
@@ -44,6 +44,7 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: $forest-color;
 }
+
 
 h1 {
   @include font-size($h1-font-sizes);

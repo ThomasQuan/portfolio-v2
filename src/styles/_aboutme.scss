@@ -45,8 +45,12 @@
 @media only screen and (max-width: 900px) {
   .card {
     flex: 1 1 1;
+    height: 60vh;
     > img {
       width: 30vw;
+      height: 60vh;
+
+      
     }
     > .content {
       padding-left: 3vw;
@@ -63,8 +67,7 @@
     overflow-x: hidden;
     overflow-y: scroll;
     > img {
-      width: 80vw;
-      height: 250px;
+      display: none;
     }
     > .content {
       padding-left: 0;
