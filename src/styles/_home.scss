@@ -1,0 +1,111 @@
+.container {
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../assets/toronto-large.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &-title {
+    font-size: 5rem;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 4px;
+    font-family: "Righteous", cursive;
+    color: $royalty-color;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+    .container-title{
+        top:5vh;
+        font-size : 2.5rem;
+    }
+}
+#sliderToggle {
+  display: flex;
+  position: absolute;
+  bottom: 5vh;
+  height: 8vh;
+  border-radius: 50%;
+  border: transparent;
+  background: transparent;
+}
+
+#sliderToggle input {
+  position: absolute;
+  display: block;
+  width: 77px;
+  height: 75.75px;
+  margin: 0;
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 3; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#sliderToggle > div > span {
+  display: block;
+  width: 40px;
+  height: 7px;
+  margin-bottom: 7px;
+  position: relative;
+
+  background: $secondary-color;
+
+  z-index: 1;
+  transform: rotate(45deg);
+  transition-duration: 0.75s;
+}
+
+#sliderToggle:hover {
+    .left-wing > span{
+        background-color:$royalty-color;
+    }
+    .right-wing > span{
+        background-color:$notice-color;
+    }
+    
+}
+  
+
+#sliderToggle > .right-wing > span {
+  margin-left: -15px;
+  transform: rotate(-45deg);
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+//  Left side
+#sliderToggle input:checked ~ .left-wing > span:first-child {
+  margin-bottom: 7px;
+}
+#sliderToggle input:checked ~ .left-wing > span {
+  width: 40px;
+  opacity: 1;
+  transform: rotate(-45deg) translate(-2px, -1px);
+  background: $teal-color;
+  margin-bottom: 10px;
+}
+
+// Right side
+#sliderToggle input:checked ~ .right-wing > span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: $storm-color;
+}

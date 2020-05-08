@@ -1,0 +1,11 @@
+@import './styles/config';
+@import './styles/_navbar';
+@import './styles/_home';
+@import './styles/_aboutme';
+
+.App{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;
+}
