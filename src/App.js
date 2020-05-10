@@ -3,6 +3,7 @@ import NavBar from "./components/navbar";
 import Home from "./components/home";
 import AboutMe from "./components/aboutme";
 import Expertise from "./components/expertise";
+import Projects from "./components/projects";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import "./App.scss";
@@ -16,8 +17,10 @@ function App() {
   return (
     <div className="App">
       <Home></Home>
-      <NavBar></NavBar>
-      <AboutMe id="start"></AboutMe>
+      <NavBar ></NavBar>
+      <AboutMe ></AboutMe>
+      <Expertise></Expertise>
+      <Projects></Projects>
     </div>
   );
 }

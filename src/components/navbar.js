@@ -13,14 +13,13 @@ $(document).ready(function () {
   });
 });
 
+
 class NavBar extends Component {
   state = {};
   render() {
     return (
-      // Turn this into a progress bar Home ===> About me ===> Skill ===> Projects ===> Question ===> Contact
-      //Avoid using hambergur because it's over use
       <React.Fragment>
-        <div className="nav">
+        <div className="nav" >
           <div id="menuToggle">
             <input type="checkbox" />
 
@@ -30,37 +29,31 @@ class NavBar extends Component {
 
             <ul id="menu">
               <li>
-                <a href="#"> Home </a>
+                <a href="#about-me"> About Me </a>
+              </li>
+              <li>
+                <a href="#skill"> Expertise </a>
+              </li>
+              <li>
+                <a href="#projects"> Projects </a>
               </li>
 
               <li>
-                <a href="#"> About Me </a>
-              </li>
-
-              <li>
-                <a href="#"> Projects </a>
-              </li>
-
-              <li>
-                <a href="#"> Question </a>
-              </li>
-
-              <li>
-                <a href="#"> Contact </a>
+                <a href="#contact"> Contact </a>
               </li>
 
               <li className="last-child">
                 <a href="https://github.com/ThomasQuan">
-                  <i class="fab fa-github"></i>
+                  <i className="fab fa-github"></i>
                 </a>
                 <a href="https://www.linkedin.com/in/thanh-quan-355912169/">
-                  <i class="fab fa-linkedin-in"></i>
+                  <i className="fab fa-linkedin-in"></i>
                 </a>
                 <a href="https://www.facebook.com/thanh.quan.129357">
-                  <i class="fab fa-facebook"></i>
+                  <i className="fab fa-facebook"></i>
                 </a>
                 <a data-tip="quantrithanh1999@gmail.com" href="mailto:quantrithanh1999@gmail.com">
-                  <i class="far fa-envelope"></i>
+                  <i className="far fa-envelope"></i>
                 </a>
                 {<ReactTooltip className="tool-tips" place={'right'} />}
               </li>

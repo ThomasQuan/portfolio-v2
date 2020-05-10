@@ -1,0 +1,43 @@
+.skill {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+
+  &-desc {
+    height: 80vh;
+    width: 35vw;
+    overflow: hidden;
+
+    > .service {
+      font-size: 1.5rem;
+      text-decoration: none;
+      list-style: none;
+      padding-left: 0.5vw;
+    }
+  }
+  &-graph {
+    padding-left: 3vw;
+    height: 80vh;
+    width: 55vw;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .skill-desc {
+    overflow-y: scroll;
+  }
+  .skill-desc::-webkit-scrollbar {
+    width: 0.2rem;
+  }
+
+  .skill-desc::-webkit-scrollbar-track {
+    background: $honey-color;
+  }
+
+  .skill-desc::-webkit-scrollbar-thumb {
+    background: $forest-color;
+  }
+}
