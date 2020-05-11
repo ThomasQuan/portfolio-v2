@@ -1,0 +1,33 @@
+.contact {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  background-color: $primary-color;
+  color: $secondary-color;
+  flex-direction: column;
+}
+.form {
+  width: 65vw;
+  height: 80vh;
+  display: flex;
+  
+}
+.form-image {
+  width: 40vw;
+  height: 100%;
+  background-color: $secondary-color;
+  background-image: url(../assets/science.png);
+  background-size: cover;
+  background-repeat: none;
+}
+.form-input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  color: $secondary-color;
+}

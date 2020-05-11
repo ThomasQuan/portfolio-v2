@@ -1,12 +1,14 @@
-@import './styles/config';
-@import './styles/_navbar';
-@import './styles/_home';
-@import './styles/_aboutme';
-@import './styles/expertise';
-@import './styles//projects';
-.App{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    overflow: hidden;
+@import "./styles/_config";
+@import "./styles/_navbar";
+@import "./styles/_home";
+@import "./styles/_aboutme";
+@import "./styles/_expertise";
+@import "./styles/_projects";
+@import "./styles/_button";
+@import "./styles/contact";
+.App {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
 }

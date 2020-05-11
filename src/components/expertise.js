@@ -43,7 +43,7 @@ class Expertise extends Component {
           dataPoints: [
             { y: 100, label: "JavaScript" },
             { y: 110, label: "NodeJS" },
-            { y: 80, label: "HTML/CSS" },
+            { y: 120, label: "HTML/CSS" },
             { y: 70, label: "SASS" },
             { y: 60, label: "Java" },
             { y: 60, label: "C#" },
