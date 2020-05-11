@@ -9,12 +9,11 @@ class Home extends Component {
       },
       750
     );
-    console.log("Clicked")
   };
   render() {
     return (
       <React.Fragment>
-        <div className="container" data-aos="fade-out" data-aos-duration="3000">
+        <div className="home-container" data-aos="fade-out" data-aos-duration="3000">
           {/* <h1 className="container-title">Welcome to my portfolio</h1> */}
           <div className="outer-layer">
             <div className="clip-text">Thomas.Q</div>

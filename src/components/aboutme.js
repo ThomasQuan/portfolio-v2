@@ -16,7 +16,7 @@ class AboutMe extends Component {
             <p> &mdash; Albert Einstein</p>
           </div>
 
-          <div className="card" data-aos="fade-left" id="about-me">
+          <div className="about-me-card" data-aos="fade-left" id="about-me">
             <img src="https://i.ibb.co/VvC0vpN/paint-1.png" alt="" />
             <div className="content">
               <h1>Thomas Quan</h1>

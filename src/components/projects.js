@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import ProjectDetail from "./project-details";
 import House from "../assets/house.jpg";
 import GeoTracker from "../assets/geotracker.jpg";

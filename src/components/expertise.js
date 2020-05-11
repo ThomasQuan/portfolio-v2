@@ -48,37 +48,27 @@ class Expertise extends Component {
             { y: 60, label: "Java" },
             { y: 60, label: "C#" },
             { y: 70, label: "Python" },
+            { y: 70, label: "SQLite" },
+            { y: 50, label: "Oracle SQL" },
           ],
         },
       ],
     };
     return (
-      // <i class="fab fa-react fa-5x"></i>
-      // <i class="fab fa-angular fa-5x"></i>
-      // <i class="fab fa-android fa-5x"></i>
-      // <i class="fab fa-node-js fa-5x"></i>
-      // <i class="fab fa-js-square fa-5x"></i>
-      // <i class="fab fa-html5 fa-5x"></i>
-      // <i class="fab fa-css3 fa-5x"></i>
-      // <i class="fab fa-sass fa-5x"></i>
-      // <i class="fab fa-docker fa-5x"></i>
-      // <i class="fab fa-aws fa-5x"></i>
-      // <i class="fab fa-java fa-5x"></i>
       <React.Fragment>
-        <div className="skill" id='skill'>
+        <div className="skill" id="skill">
           <div className="skill-desc" data-aos="fade-right">
             <h1>Consider hiring me</h1>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum
+              I'm skill in designing, developing and maintaining application
+              either it's for a mobile application or web application by
+              implementing the latest date technology and software. Most of the
+              tools that I use for building my application resolve around
+              HTML/CSS and Javascript, but I'm not limited to it as I'm
+              flexiable to switch between other field and languages as needed.
+              My strong point in programming are anything that is based around
+              Node.js or functional programming, but I'm also good at Object
+              oriented base languages such as C# and Java.
             </p>
             <br></br>
             <h1>Service provided</h1>
