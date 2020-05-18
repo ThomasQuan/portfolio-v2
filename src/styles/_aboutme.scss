@@ -25,11 +25,11 @@
   text-align: center;;
   > img {
     width: 30vw;
-    height: 60vh;
+    height: 70vh;
   }
   > .content {
     width: 30vw;
-    height: 60vh;
+    height: 70vh;
     padding-left: 2vw;
     background-color: $secondary-color;
     overflow-y: scroll;
@@ -65,13 +65,14 @@
   }
 }
 
+
 @media only screen and (max-width: 900px) {
   .card {
     flex: 1 1 1;
-    height: 60vh;
+    height: 70vh;
     > img {
       width: 30vw;
-      height: 60vh;
+      height: 70vh;
 
       
     }

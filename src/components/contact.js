@@ -1,7 +1,29 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import ErrorMessage from "./error";
+import Modal from "react-modal";
+
 const Contact = () => {
+  const customStyles = {
+    content: {
+      top: "50%",
+      left: "50%",
+      right: "auto",
+      bottom: "auto",
+      marginRight: "-50%",
+      transform: "translate(-50%, -50%)",
+    },
+  };
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
+  Modal.setAppElement("#root");
   const sendFeedback = (templateId, variables) => {
     window.emailjs
       .send("gmail", templateId, variables)
@@ -18,6 +40,7 @@ const Contact = () => {
       from_email: data.email,
       reply_to: "quantrithanh1999@gmail.com",
     });
+    openModal();
   };
   return (
     <React.Fragment>
@@ -57,6 +80,14 @@ const Contact = () => {
                 Send message
               </button>
             </form>
+            <Modal
+              isOpen={modalIsOpen}
+              onRequestClose={closeModal}
+              style={customStyles}
+              contentLabel="Example Modal"
+            >
+              <h2>Your message has been sent !</h2>
+            </Modal>
             <div className="form-link">
               <a href="https://github.com/ThomasQuan">
                 <i className="fab fa-github fa-2x"></i>

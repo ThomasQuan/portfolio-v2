@@ -1,12 +1,16 @@
 import React, { Component } from "react";
-
+import { Document, Page } from "react-pdf";
 class AboutMe extends Component {
-  state = {};
-
+  state = { numPages: null, pageNumber: 1 };
+  onDocumentLoadSuccess = ({ numPages }) => {
+    this.setState({ numPages });
+  };
   render() {
+    const { pageNumber, numPages } = this.state;
+
     return (
       <React.Fragment>
-        <div className='about-me' id='about-me'>
+        <div className="about-me" id="about-me">
           <div className="about-me-header" data-aos="fade-left">
             <h1 className="title"> A little bit about me </h1>
             <p className="quote">
@@ -15,7 +19,7 @@ class AboutMe extends Component {
             </p>
             <p> &mdash; Albert Einstein</p>
           </div>
-
+         
           <div className="about-me-card" data-aos="fade-left" id="about-me">
             <img src="https://i.ibb.co/VvC0vpN/paint-1.png" alt="" />
             <div className="content">

@@ -4,15 +4,15 @@ export default function ErrroMessage({ error }) {
   if (error) {
     switch (error.type) {
       case "required":
-        return <p>This is required</p>;
+        return <p className='text-warning'>This is required</p>;
       case "minLength":
-        return <p>Your last name need minmium 2 charcaters</p>;
+        return <p className='text-warning'>Your last name need minmium 2 charcaters</p>;
       case "pattern":
-        return <p>Enter a valid email address</p>;
+        return <p className='text-warning'>Enter a valid email address</p>;
       case "min":
-        return <p>Minmium age is 18</p>;
+        return <p className='text-warning'>Minmium age is 18</p>;
       case "validate":
-        return <p>Username is already used</p>;
+        return <p className='text-warning'>Username is already used</p>;
       default:
         return null;
     }
