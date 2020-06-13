@@ -10,7 +10,7 @@ class Expertise extends Component {
       theme: "light2",
       backgroundColor: "#e2e0d4",
       title: {
-        text: "MY SKILLS",
+        text: "TECH STACK",
       },
       data: [
         {
@@ -22,13 +22,14 @@ class Expertise extends Component {
           dataPoints: [
             { y: 13, label: "Python Data Analyst and Machine Learning " },
             { y: 7, label: "Mobile Development" },
-            { y: 5, label: "AWS Cloud Computing Service" },
+            { y: 5, label: "DevOp" },
             { y: 5, label: ".NET " },
             { y: 17, label: "NativeScript " },
             { y: 5, label: "Docker" },
             { y: 22, label: "ReactJS" },
             { y: 15, label: "Angular" },
             { y: 11, label: "Data Structures & Algorithm" },
+            { y: 5, label: "Redux" },
           ],
         },
       ],
@@ -37,19 +38,23 @@ class Expertise extends Component {
     const bar_options = {
       exportEnabled: false,
       backgroundColor: "#e2e0d4",
+      title: {
+        text: "My Skill & Knowledge",
+      },
       data: [
         {
           type: "bar",
           dataPoints: [
-            { y: 100, label: "JavaScript" },
-            { y: 110, label: "NodeJS" },
-            { y: 120, label: "HTML/CSS" },
-            { y: 70, label: "SASS" },
+            { y: 95, label: "JavaScript" },
+            { y: 80, label: "NodeJS" },
+            { y: 100, label: "HTML/CSS" },
+            { y: 80, label: "SASS" },
             { y: 60, label: "Java" },
-            { y: 60, label: "C#" },
+            { y: 55, label: "C#" },
             { y: 70, label: "Python" },
-            { y: 70, label: "SQLite" },
-            { y: 50, label: "Oracle SQL" },
+            { y: 70, label: "SQL" },
+            { y: 85, label: "TypeScript" },
+            { y: 55, label: "Git" },
           ],
         },
       ],
@@ -64,11 +69,9 @@ class Expertise extends Component {
               either it's for a mobile application or web application by
               implementing the latest date technology and software. Most of the
               tools that I use for building my application resolve around
-              HTML/CSS and Javascript, but I'm not limited to it as I'm
-              flexiable to switch between other field and languages as needed.
-              My strong point in programming are anything that is based around
-              Node.js or functional programming, but I'm also good at Object
-              oriented base languages such as C# and Java.
+              implementing HTML/CSS and Javascript,TypeScript but I'm not limited to it as I'm
+              flexiable in switching to other languages.Thus if you desire a skill and passionate 
+              developer that is well-grounded and expandable, please contact me for jobs, or projects.
             </p>
             <br></br>
             <h1>Service provided</h1>
