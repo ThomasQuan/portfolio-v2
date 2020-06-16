@@ -10,10 +10,10 @@ const ProjectDetail = (props) => {
       bottom: "auto",
       marginRight: "-50%",
       transform: "translate(-50%, -50%)",
-      width: "70vw",
-      height: "90vh",
+      width: "90vw",
+      height: "95vh",
       padding: 0,
-      overflow: "hidden",
+      overflowY: "scroll",
     },
   };
   Modal.setAppElement("#root");
@@ -49,13 +49,16 @@ const ProjectDetail = (props) => {
             className="modal-title"
             style={{ backgroundImage: `url(${props.img})` }}
           >
-            <h2>{props.projectName}</h2>
+            <h3>{props.projectName}</h3>
           </div>
           <div className="modal-desc">
-            <h3>What is the project ?</h3>
+            <div className='modal-desc-title'>
+              <h4>What is the project ?</h4>
+              <button onClick={closeModal}>X</button>
+            </div>
             <p>{props.desc}</p>
             <div className="stack">
-              <h3> Software used in the making</h3>
+              <h4> Software used in the making</h4>
               <ul>
                 {props.stack.map((key) => (
                   <li key={key}>{key}</li>
@@ -63,13 +66,13 @@ const ProjectDetail = (props) => {
               </ul>
             </div>
             <div>
-              <h3> View Project folder</h3>
+              <h4> View Project folder</h4>
               <a href={props.projectLink}>
                 <i className="fab fa-github"></i>
               </a>
             </div>
             <div>
-              <h3> View Project website</h3>
+              <h4> View Project website</h4>
               <a href={props.websiteLink}>
                 <i className="fas fa-link"></i>
               </a>

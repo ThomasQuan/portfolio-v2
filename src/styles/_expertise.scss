@@ -14,8 +14,6 @@
     > .service {
       font-size: 1.5rem;
       text-decoration: none;
-      list-style: none;
-      padding-left: 0.5vw;
     }
   }
   &-graph {
@@ -24,10 +22,22 @@
     width: 55vw;
   }
 }
-
+.test{
+  width: 100vw;
+  height: 100vh;
+}
 @media only screen and (max-width: 900px) {
+  .skill{
+    flex-direction: column;
+    height: 200vh;
+  }
   .skill-desc {
+    height:100;
+    width:100vw;
     overflow-y: scroll;
+    > h1,p{
+      margin-left: 1rem;
+    }
   }
   .skill-desc::-webkit-scrollbar {
     width: 0.2rem;
@@ -39,5 +49,9 @@
 
   .skill-desc::-webkit-scrollbar-thumb {
     background: $forest-color;
+  }
+  .skill-graph{
+    height: 100vh;
+    width: 100vw;
   }
 }

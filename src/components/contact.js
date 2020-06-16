@@ -64,7 +64,7 @@ const Contact = () => {
                 <ErrorMessage error={errors.email} />
               </div>
               <div className="form-group">
-                <label>Feedback</label>
+                <label>Your Message</label>
                 <textarea
                   className="form-control"
                   rows="3"

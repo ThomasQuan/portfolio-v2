@@ -15,6 +15,12 @@
     }
   }
 }
+.status{
+  font-size: 1.10rem;
+  display: flex;
+  justify-content: center;
+  color: $royalty-color;
+}
 
 .about-me-card {
   margin-top: 1vh;
@@ -85,7 +91,7 @@
   .about-me-header {
     font-size: 1rem;
   }
-  .card {
+  .about-me-card {
     height: 70vh;
     flex-direction: column;
     overflow-x: hidden;
@@ -98,4 +104,7 @@
       padding-left: 2rem;
     }
   }
+}
+@media only screen and (max-width : 400px){
+  
 }

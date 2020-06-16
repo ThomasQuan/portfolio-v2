@@ -22,6 +22,10 @@ class AboutMe extends Component {
             <div className="content">
               <h1>Thomas Quan</h1>
               <h3>Software Developer </h3>
+              <p className="status">
+                <i className="fas fa-lightbulb"></i> Currently building Pokemon Team
+                Analyst and learning PostgresQL
+              </p>
               <p id="header"> Greeting</p>
               <p id="content">
                 My name is Thomas Quan and I grew up in a family of 5 in a busy

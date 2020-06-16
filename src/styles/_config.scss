@@ -10,15 +10,15 @@ $teal-color: rgba(21, 64, 66, 0.699);
 
 $p-font-sizes: (
   null: 15px,
-  480px: 17px,
-  640px: 19px,
-  1024px: 20px,
+  480px: 13px,
+  640px: 16px,
+  1024px: 18px,
 );
 $h1-font-sizes: (
   null: 28px,
   480px: 31px,
   640px: 33px,
-  1024px: 48px,
+  1024px: 40px,
 );
 
 @mixin font-size($fs-map) {

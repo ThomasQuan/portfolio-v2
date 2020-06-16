@@ -11,7 +11,7 @@
 }
 .form {
   margin-top: 2rem;
-  width: 50vw;
+  width: 60vw;
   height: 70vh;
   display: flex;
   border: solid $secondary-color;
@@ -24,36 +24,42 @@
   background-size: cover;
   background-repeat: none;
 }
-.form-content{
+.form-content {
   display: flex;
   flex-direction: column;
   width: 43vw;
-
 }
-.form-input{
+.form-input {
   margin-top: 5vh;
   margin-left: 5vw;
   margin-right: 5vw;
 }
-.form-link{
+.form-link {
   margin-top: auto;
   margin-bottom: 2vh;
   display: flex;
   justify-content: space-around;
 }
-.form-group{
-  >textarea{
+.form-group {
+  > textarea {
     height: 30vh;
   }
 }
 @media only screen and (max-width: 600px) {
-  .form{
-    flex-direction: column;;
+  .form {
+    flex-direction: column;
+    width: 80vw;
+    height: 70vh;
+    border:none;
   }
-  .form-image{
+
+  .form-image {
+    display: none;
+  }
+  .form-content {
     width: 100%;
   }
-  .form-content{
-    width: 100%;
+  .form-link{
+    margin-top: 2rem;
   }
 }

@@ -19,7 +19,7 @@ const Projects = () => {
         "https://github.com/ThomasQuan/ontario-house-price-analysing",
     },
     {
-      projectName: "Geo Tracker",
+      projectName: "Geo Position Tracking",
       desc:
         "A mobile application builded with android studio via JAVA that provide user the " +
         "ability to track their movement from point A to B and give back a result of their travel such as " +
@@ -62,6 +62,7 @@ const Projects = () => {
   return (
     <React.Fragment>
       <div className="projects" id="projects">
+        
         <div
           className="projects-container"
           data-aos="zoom-in-left"
@@ -81,7 +82,7 @@ const Projects = () => {
             </div>
           </div>
           <div className="project geotracker-img">
-            <h1>GeoTracker</h1>
+            <h1>Geo Position Tracking</h1>
             <div className="link">
               <ProjectDetail
                 projectName={_projects[1].projectName}
@@ -90,7 +91,6 @@ const Projects = () => {
                 stack={_projects[1].stack}
                 projectLink={_projects[1].projectLink}
                 websiteLink={_projects[1].websiteLink}
-
               ></ProjectDetail>
             </div>
           </div>
@@ -107,7 +107,6 @@ const Projects = () => {
                 stack={_projects[2].stack}
                 projectLink={_projects[2].projectLink}
                 websiteLink={_projects[2].websiteLink}
-
               ></ProjectDetail>
             </div>
           </div>
@@ -124,7 +123,6 @@ const Projects = () => {
                 stack={_projects[3].stack}
                 projectLink={_projects[3].projectLink}
                 websiteLink={_projects[3].websiteLink}
-
               ></ProjectDetail>
             </div>
           </div>
