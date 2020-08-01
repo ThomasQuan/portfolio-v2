@@ -23,8 +23,8 @@ class AboutMe extends Component {
               <h1>Thomas Quan</h1>
               <h3>Software Developer </h3>
               <p className="status">
-                <i className="fas fa-lightbulb"></i> Currently building Pokemon Team
-                Analyst and learning PostgresQL
+                <i className="fas fa-lightbulb"></i> Currently building Pokemon
+                Team Analyst and learning PostgresQL
               </p>
               <p id="header"> Greeting</p>
               <p id="content">
@@ -34,7 +34,7 @@ class AboutMe extends Component {
                 to become a software developer. After highs school graduation I
                 move to Toronto in pursuit of getting a career as a software
                 developer. Graduated from George Brown college with a GPA of
-                3.34 in Computer Programming and Analyst. Aside from that, I
+                3.37 in Computer Programming and Analyst. Aside from that, I
                 still spend most of my time playing videos of different genre
                 with my friend, but I gain a new hobby of reading related
                 software article or Philosophy books or sometime light novel

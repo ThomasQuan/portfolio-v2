@@ -1,11 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ProjectDetail from "./project-details";
-import House from "../assets/house.jpg";
-import GeoTracker from "../assets/geotracker.jpg";
-import Restaurant from "../assets/restaurant.jpg";
-import Chat from "../assets/chat.jpg";
-import Arcade from "../assets/arcade.jpg";
+import House from "../../assets/house.jpg";
+import GeoTracker from "../../assets/geotracker.jpg";
+import Restaurant from "../../assets/restaurant.jpg";
+import Chat from "../../assets/chat.jpg";
+import Arcade from "../../assets/arcade.jpg";
+import HousePrice1 from "../../assets/HousePrice/house-price1.PNG";
+import HousePrice2 from "../../assets/HousePrice/house-price2.PNG";
+import HousePrice3 from "../../assets/HousePrice/house-price3.PNG";
+import HousePrice4 from "../../assets/HousePrice/house-price4.PNG";
+import PokemonProject_Img1 from "../../assets/PokemonAnalyst/pokemon-analyst-1.PNG";
+import PokemonProject_Img2 from "../../assets/PokemonAnalyst/pokemon-analyst-2.PNG";
+import PokemonProject_Img3 from "../../assets/PokemonAnalyst/pokemon-analyst-3.PNG";
 
+import Capstone1 from "../../assets/Capstone/employee-list.PNG";
+import Capstone2 from "../../assets/Capstone/employee-management.PNG";
+import Capstone3 from "../../assets/Capstone/login.PNG";
+import Capstone4 from "../../assets/Capstone/manager-dashboard.PNG";
+import Capstone5 from "../../assets/Capstone/work-history.PNG";
 const Projects = () => {
   const [_projects, setProject] = useState([
     {
@@ -17,6 +29,9 @@ const Projects = () => {
       stack: ["Python", "Google Collab", "Numpy", "Pandas"],
       projectLink:
         "https://github.com/ThomasQuan/ontario-house-price-analysing",
+      backgroundImg: "house-img",
+      projectCover: House,
+      projectImages: [HousePrice1, HousePrice2, HousePrice3, HousePrice4],
     },
     {
       projectName: "Geo Position Tracking",
@@ -27,6 +42,9 @@ const Projects = () => {
         " , and storing thoes statistic in a local database using SQLite Database.",
       stack: ["Android Studio", "Java", "Google Map API", "SQLite Database"],
       projectLink: "https://github.com/tunguyen912/Geotracker_Android",
+      backgroundImg: "geotracker-img",
+      projectCover: GeoTracker,
+      projectImages: [],
     },
     {
       projectName: "Restaurant Management System",
@@ -38,6 +56,9 @@ const Projects = () => {
         " using Angular as base for web browsers and NativeScript for mobile devices.",
       stack: ["Angular", "NativeScript", "MongoDB", "Express", "NodeJS"],
       projectLink: "https://github.com/tylrtnguyen/CapstoneProject",
+      backgroundImg: "capstone-img",
+      projectCover: Restaurant,
+      projectImages: [Capstone1, Capstone2, Capstone3, Capstone4,Capstone5],
     },
     {
       projectName: "Chat Application",
@@ -47,6 +68,9 @@ const Projects = () => {
       stack: ["React", "NodeJS", "Express", "Material UI"],
       projectLink: "https://github.com/tunguyen912/simple_chat_app",
       websiteLink: "https://mernsocketio.herokuapp.com/",
+      backgroundImg: "chatapp-img",
+      projectCover: Chat,
+      projectImages: [],
     },
     {
       projectName: "Arcade Lobby Room",
@@ -57,89 +81,53 @@ const Projects = () => {
       stack: ["Angular", "MongoDB", "Express", "NodeJS"],
       projectLink: "https://github.com/ThomasQuan/MEAN_GAME_LOBBY",
       websiteLink: "https://powerful-spire-77739.herokuapp.com/home",
+      backgroundImg: "gameroom-img",
+      projectCover: Arcade,
+      projectImages: [],
+    },
+    {
+      projectName: "Pokemons Analyst ( Beta version )",
+      desc:
+        "Let Rotom help you build your dream team, select from hundreds of Pokémon’s that has been collected through multiple generation and pick your team to be the very top." +
+        "Rotom will help you analyst the team statistic along with move sets, PP, weakness and Pokémon attribute." +
+        " Application is still in beta so there is still some functionality that Rotom can't perform yet",
+      stack: ["ReactJS", "Axios", "SASS", "ChartJS"],
+      projectLink: "https://github.com/ThomasQuan/pokemon-team-analyst",
+      websiteLink: "https://rotom-analyst.vercel.app/",
+      backgroundImg: "pokemon-theme-img",
+      projectCover: Arcade,
+      projectImages: [
+        PokemonProject_Img1,
+        PokemonProject_Img2,
+        PokemonProject_Img3,
+      ],
     },
   ]);
+
   return (
     <React.Fragment>
       <div className="projects" id="projects">
-        
         <div
           className="projects-container"
           data-aos="zoom-in-left"
           data-aos-duration="750"
         >
-          <div className="project house-img">
-            <h1>Ontario House Price Analyst</h1>
-            <div className="link">
-              <ProjectDetail
-                projectName={_projects[0].projectName}
-                desc={_projects[0].desc}
-                img={House}
-                stack={_projects[0].stack}
-                projectLink={_projects[0].projectLink}
-                websiteLink={_projects[0].websiteLink}
-              ></ProjectDetail>
+          {_projects.map((p) => (
+            <div className={`project ${p.backgroundImg}`}>
+              <h1>{p.projectName}</h1>
+              <div className="link">
+                <ProjectDetail
+                  projectName={p.projectName}
+                  desc={p.desc}
+                  projectCover={p.projectCover}
+                  projectImages={p.projectImages}
+                  stack={p.stack}
+                  projectLink={p.projectLink}
+                  websiteLink={p.websiteLink}
+                ></ProjectDetail>
+              </div>
             </div>
-          </div>
-          <div className="project geotracker-img">
-            <h1>Geo Position Tracking</h1>
-            <div className="link">
-              <ProjectDetail
-                projectName={_projects[1].projectName}
-                desc={_projects[1].desc}
-                img={GeoTracker}
-                stack={_projects[1].stack}
-                projectLink={_projects[1].projectLink}
-                websiteLink={_projects[1].websiteLink}
-              ></ProjectDetail>
-            </div>
-          </div>
-
-          <div className="break-row"></div>
-
-          <div className="project capstone-img">
-            <h1>CAPSTONE PROJECTS</h1>
-            <div className="link">
-              <ProjectDetail
-                projectName={_projects[2].projectName}
-                desc={_projects[2].desc}
-                img={Restaurant}
-                stack={_projects[2].stack}
-                projectLink={_projects[2].projectLink}
-                websiteLink={_projects[2].websiteLink}
-              ></ProjectDetail>
-            </div>
-          </div>
-
-          <div className="break-row"></div>
-
-          <div className="project chatapp-img">
-            <h1>Chat App</h1>
-            <div className="link">
-              <ProjectDetail
-                projectName={_projects[3].projectName}
-                desc={_projects[3].desc}
-                img={Chat}
-                stack={_projects[3].stack}
-                projectLink={_projects[3].projectLink}
-                websiteLink={_projects[3].websiteLink}
-              ></ProjectDetail>
-            </div>
-          </div>
-
-          <div className="project gameroom-img">
-            <h1>Arcade Lobby Room</h1>
-            <div className="link">
-              <ProjectDetail
-                projectName={_projects[4].projectName}
-                desc={_projects[4].desc}
-                img={Arcade}
-                stack={_projects[4].stack}
-                projectLink={_projects[4].projectLink}
-                websiteLink={_projects[4].websiteLink}
-              ></ProjectDetail>
-            </div>
-          </div>
+          ))}
         </div>
         <div
           className="projects-title"
