@@ -18,6 +18,12 @@ import Capstone2 from "../../assets/Capstone/employee-management.PNG";
 import Capstone3 from "../../assets/Capstone/login.PNG";
 import Capstone4 from "../../assets/Capstone/manager-dashboard.PNG";
 import Capstone5 from "../../assets/Capstone/work-history.PNG";
+
+import GeoTracker1 from "../../assets/GeoTracker/tracker1.PNG";
+import GeoTracker2 from "../../assets/GeoTracker/tracker2.PNG";
+import GeoTracker3 from "../../assets/GeoTracker/tracker3.PNG";
+import GeoTracker4 from "../../assets/GeoTracker/tracker4.PNG";
+
 const Projects = () => {
   const [_projects, setProject] = useState([
     {
@@ -44,7 +50,7 @@ const Projects = () => {
       projectLink: "https://github.com/tunguyen912/Geotracker_Android",
       backgroundImg: "geotracker-img",
       projectCover: GeoTracker,
-      projectImages: [],
+      projectImages: [GeoTracker1, GeoTracker2, GeoTracker3, GeoTracker4],
     },
     {
       projectName: "Restaurant Management System",
@@ -58,7 +64,7 @@ const Projects = () => {
       projectLink: "https://github.com/tylrtnguyen/CapstoneProject",
       backgroundImg: "capstone-img",
       projectCover: Restaurant,
-      projectImages: [Capstone1, Capstone2, Capstone3, Capstone4,Capstone5],
+      projectImages: [Capstone1, Capstone2, Capstone3, Capstone4, Capstone5],
     },
     {
       projectName: "Chat Application",
@@ -112,8 +118,8 @@ const Projects = () => {
           data-aos="zoom-in-left"
           data-aos-duration="750"
         >
-          {_projects.map((p) => (
-            <div className={`project ${p.backgroundImg}`}>
+          {_projects.map((p, idx) => (
+            <div key={idx} className={`project ${p.backgroundImg}`}>
               <h1>{p.projectName}</h1>
               <div className="link">
                 <ProjectDetail

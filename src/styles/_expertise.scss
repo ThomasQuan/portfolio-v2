@@ -1,13 +1,13 @@
 .skill {
   width: 100vw;
-  height: 100vh;
+  height: max-content;
   display: flex;
   justify-content: center;
   text-align: left;
   align-items: center;
 
   &-desc {
-    height: 80vh;
+    height: max-content;
     width: 35vw;
     overflow: hidden;
 
@@ -18,7 +18,7 @@
   }
   &-graph {
     padding-left: 3vw;
-    height: 80vh;
+    height: max-content;
     width: 55vw;
   }
 }
@@ -29,7 +29,7 @@
 @media only screen and (max-width: 900px) {
   .skill{
     flex-direction: column;
-    height: 200vh;
+    height: max-content;
   }
   .skill-desc {
     height:100;
@@ -51,7 +51,7 @@
     background: $forest-color;
   }
   .skill-graph{
-    height: 100vh;
+    height: max-content;
     width: 100vw;
   }
 }

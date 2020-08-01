@@ -16,8 +16,8 @@ const ProjectCarousel = (props) => {
   };
   return (
     <Slider {...settings}>
-      {props.images.map((img) => (
-        <div className="slider-div">
+      {props.images.map((img,idx) => (
+        <div key={idx} className="slider-div">
           <img src={img} className="slide-img" alt="project-images"></img>
         </div>
       ))}
