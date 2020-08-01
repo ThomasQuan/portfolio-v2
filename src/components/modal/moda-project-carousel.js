@@ -8,15 +8,24 @@ const ProjectCarousel = (props) => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    centerMode: true,
-    adaptiveHeight: true,
+    className: "slides",
     fade: true,
     arrows: true,
-    className: "slides",
+    responsive: [
+      {
+        breakpoint: 780,
+        settings: {
+          autoplay: true,
+          autoplaySpeed: 2500,
+          arrows: false,
+
+        },
+      },
+    ],
   };
   return (
     <Slider {...settings}>
-      {props.images.map((img,idx) => (
+      {props.images.map((img, idx) => (
         <div key={idx} className="slider-div">
           <img src={img} className="slide-img" alt="project-images"></img>
         </div>

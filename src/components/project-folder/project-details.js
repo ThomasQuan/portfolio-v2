@@ -60,8 +60,10 @@ const ProjectDetail = (props) => {
               webLink={props.websiteLink}
               closeModal={closeModal}
             />
-            <div className="modal-carousel">
-              <ProjectCarousel images={props.projectImages} />
+            <div className='modal-carousel-container'>
+              <div className="modal-carousel">
+                <ProjectCarousel images={props.projectImages} />
+              </div>
             </div>
           </div>
         </div>
