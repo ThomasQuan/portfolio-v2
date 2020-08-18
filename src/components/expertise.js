@@ -16,7 +16,7 @@ class Expertise extends Component {
         {
           type: "pie",
           //percentage of each pie piece
-          indexLabelFontSize: 18,
+          indexLabelFontSize: 14,
           startAngle: -90,
 
           dataPoints: [
@@ -44,6 +44,7 @@ class Expertise extends Component {
       data: [
         {
           type: "bar",
+          indexLabelFontSize: 14,
           dataPoints: [
             { y: 95, label: "JavaScript" },
             { y: 80, label: "NodeJS" },
