@@ -2,6 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import ErrorMessage from "./error";
 import Modal from "react-modal";
+import { ReactComponent as ContactIllustration } from "../assets/svg/undraw_contact_us_15o2.svg";
 
 const Contact = () => {
   const customStyles = {
@@ -46,9 +47,25 @@ const Contact = () => {
     <React.Fragment>
       <div className="contact" id="contact">
         <h1>Contact me for projects or hiring</h1>
+        <div className="form-link">
+          <a href="https://github.com/ThomasQuan">
+            <i className="fab fa-github fa-2x"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/thanh-quan-355912169/">
+            <i className="fab fa-linkedin-in fa-2x"></i>
+          </a>
+          <a href="https://www.facebook.com/thanh.quan.129357">
+            <i className="fab fa-facebook fa-2x"></i>
+          </a>
+          <a
+            data-tip="quantrithanh1999@gmail.com"
+            href="mailto:quantrithanh1999@gmail.com"
+          >
+            <i className="far fa-envelope fa-2x"></i>
+          </a>
+        </div>
         <div className="form">
-          <div className="form-image"></div>
-
+          <ContactIllustration className="form-image" />
           <div className="form-content">
             <form className="form-input" onSubmit={handleSubmit(onSubmit)}>
               <div className="form-group">
@@ -75,7 +92,7 @@ const Contact = () => {
               <button
                 onClick={handleSubmit(onSubmit)}
                 type="submit"
-                className="btn btn-danger"
+                className="btn-submit"
               >
                 Send message
               </button>
@@ -88,23 +105,6 @@ const Contact = () => {
             >
               <h2>Your message has been sent !</h2>
             </Modal>
-            <div className="form-link">
-              <a href="https://github.com/ThomasQuan">
-                <i className="fab fa-github fa-2x"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/thanh-quan-355912169/">
-                <i className="fab fa-linkedin-in fa-2x"></i>
-              </a>
-              <a href="https://www.facebook.com/thanh.quan.129357">
-                <i className="fab fa-facebook fa-2x"></i>
-              </a>
-              <a
-                data-tip="quantrithanh1999@gmail.com"
-                href="mailto:quantrithanh1999@gmail.com"
-              >
-                <i className="far fa-envelope fa-2x"></i>
-              </a>
-            </div>
           </div>
         </div>
       </div>

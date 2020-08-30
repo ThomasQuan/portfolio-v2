@@ -1,33 +1,36 @@
 .contact {
+  margin-top: 2vh;
   width: 100vw;
-  height: 100vh;
+  height: auto;
   display: flex;
   justify-content: center;
   text-align: left;
   align-items: center;
-  background-color: $primary-color;
-  color: $secondary-color;
   flex-direction: column;
+  >h1{
+    text-align: center;
+    border-bottom: solid $forest-color 2px;
+  }
 }
 .form {
-  margin-top: 2rem;
-  width: 60vw;
-  height: 70vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  width: 100vw;
+
   display: flex;
-  border: solid $secondary-color;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .form-image {
-  width: 40vw;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 30vw;
   height: 100%;
-  background-color: $secondary-color;
-  background-image: url(../assets/science.png);
-  background-size: cover;
-  background-repeat: none;
 }
 .form-content {
   display: flex;
   flex-direction: column;
-  width: 43vw;
+  width: 50vw;
 }
 .form-input {
   margin-top: 5vh;
@@ -35,31 +38,47 @@
   margin-right: 5vw;
 }
 .form-link {
-  margin-top: auto;
-  margin-bottom: 2vh;
+  width: 50vw;
+  margin-top: 2vh;
   display: flex;
   justify-content: space-around;
+  >a{
+    color: $forest-color;
+  }
+  >a:hover{
+    color: $honey-color;
+  }
 }
 .form-group {
   > textarea {
     height: 30vh;
   }
 }
-@media only screen and (max-width: 600px) {
+
+.btn-submit {
+  width: 100%;
+
+  border-radius: 5px;
+  background-color: $forest-color;
+  padding: 1vh;
+  color: white;
+}
+.btn-submit:hover {
+  background-color: black;
+}
+@media only screen and (max-width: 930px) {
   .form {
     flex-direction: column;
-    width: 80vw;
-    height: 70vh;
-    border:none;
   }
 
   .form-image {
-    display: none;
+    width: 100vw;
+    height: 30vh;
   }
   .form-content {
-    width: 100%;
+    width: 100vw;
   }
-  .form-link{
-    margin-top: 2rem;
+  .form-link {
+    width: 90vw;
   }
 }

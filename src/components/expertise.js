@@ -1,91 +1,121 @@
 import React, { Component } from "react";
-import CanvasJSReact from "../styles/canvas/canvasjs.react";
+import { ReactComponent as JS } from "../assets/svg/javascript.svg";
+import { ReactComponent as JQuery } from "../assets/svg/jquery.svg";
+import { ReactComponent as Angular } from "../assets/svg/angular.svg";
+import { ReactComponent as Sass } from "../assets/svg/sass.svg";
+import { ReactComponent as Bootstrap } from "../assets/svg/bootstrap-4.svg";
+import { ReactComponent as ReactLogo } from "../assets/svg/react.svg";
+import { ReactComponent as MySQL } from "../assets/svg/mysql.svg";
+import { ReactComponent as MongoDB } from "../assets/svg/mongodb.svg";
+import { ReactComponent as NodeJS } from "../assets/svg/nodejs.svg";
+import { ReactComponent as SocketIO } from "../assets/svg/socket-io.svg";
+import { ReactComponent as JWT } from "../assets/svg/jwt.svg";
+import { ReactComponent as GraphQL } from "../assets/svg/graphql.svg";
+import { ReactComponent as MaterialUI } from "../assets/svg/material-ui.svg";
+import { ReactComponent as Git } from "../assets/svg/git.svg";
+import { ReactComponent as Figma } from "../assets/svg/figma.svg";
+import { ReactComponent as Trello } from "../assets/svg/trello.svg";
+import { ReactComponent as Jira } from "../assets/svg/jira.svg";
+import { ReactComponent as Photoshop } from "../assets/svg/photoshop-cc.svg";
 
-const CanvasJSChart = CanvasJSReact.CanvasJSChart;
 class Expertise extends Component {
   state = {};
   render() {
-    const pie_options = {
-      exportEnabled: false,
-      theme: "light2",
-      backgroundColor: "#e2e0d4",
-      title: {
-        text: "TECH STACK",
-      },
-      data: [
-        {
-          type: "pie",
-          //percentage of each pie piece
-          indexLabelFontSize: 14,
-          startAngle: -90,
-
-          dataPoints: [
-            { y: 13, label: "Python Data Analyst and Machine Learning " },
-            { y: 7, label: "Mobile Development" },
-            { y: 5, label: "DevOp" },
-            { y: 20, label: "Responsive Design " },
-            { y: 17, label: "NativeScript " },
-            { y: 5, label: "Docker" },
-            { y: 22, label: "ReactJS" },
-            { y: 15, label: "Angular" },
-            { y: 11, label: "Data Structures & Algorithm" },
-          ],
-        },
-      ],
-    };
-
-    const bar_options = {
-      exportEnabled: false,
-      backgroundColor: "#e2e0d4",
-      title: {
-        text: "My Skill & Knowledge",
-      },
-      data: [
-        {
-          type: "bar",
-          indexLabelFontSize: 14,
-          dataPoints: [
-            { y: 95, label: "JavaScript" },
-            { y: 90, label: "NodeJS" },
-            { y: 100, label: "HTML/CSS" },
-            { y: 95, label: "SASS" },
-            { y: 60, label: "Java" },
-            { y: 55, label: "C#" },
-            { y: 70, label: "Python" },
-            { y: 70, label: "SQL" },
-            { y: 85, label: "TypeScript" },
-            { y: 70, label: "Git" },
-          ],
-        },
-      ],
-    };
     return (
       <React.Fragment>
         <div className="skill" id="skill">
-          <div className="skill-desc" data-aos="fade-right">
-            <h1>Consider hiring me</h1>
-            <p>
-              I'm skill in designing, developing and maintaining application
-              either it's for a mobile application or web application by
-              implementing the latest date technology and software. Most of the
-              tools that I use for building my application resolve around
-              implementing HTML/CSS and Javascript,TypeScript but I'm not limited to it as I'm
-              flexiable in switching to other languages.Thus if you desire a skill and passionate 
-              developer that is well-grounded and expandable, please contact me for jobs, or projects.
-            </p>
-            <br></br>
-            <h1>Service provided</h1>
-            <ul className="service">
-              <li> UI/UX Design </li>
-              <li> Front End Development </li>
-              <li> Back End Development </li>
-              <li> Mobile Development </li>
-              <li> Data Analyst </li>
-            </ul>
+          <div className="skill-header">
+            <h1>TECHNOLOGY</h1>
+            <h3>Programming Languages, Framework &amp; Library, Tools</h3>
           </div>
-          <div className="skill-graph" data-aos="fade-left">
-            <CanvasJSChart options={pie_options} />
-            <CanvasJSChart options={bar_options} />
+          <div className="skill-desc-container">
+            <div className="skill-desc-container-content" style={{backgroundColor : "#d8b26e"}}>
+              <h1>FRONT END</h1>
+              <div className="skill-desc-container-content-svg-container">
+                <div>
+                  <JS className="svg-logo" />
+                  <p> JavaScript </p>
+                </div>
+                <div>
+                  <JQuery className="svg-logo" />
+                  <p> jQuerry </p>
+                </div>
+                <div>
+                  <Angular className="svg-logo" />
+                  <p> Angular</p>
+                </div>
+                <div>
+                  <Sass className="svg-logo" />
+                  <p> Sasss</p>
+                </div>
+                <div>
+                  <Bootstrap className="svg-logo" />
+                  <p> Bootstrap</p>
+                </div>
+                <div>
+                  <ReactLogo className="svg-logo" />
+                  <p> React</p>
+                </div>
+                <div>
+                  <MaterialUI className="svg-logo" />
+                  <p> Material UI</p>
+                </div>
+              </div>
+            </div>
+            <div className="skill-desc-container-content" style={{backgroundColor : "#b477759c"}}>
+              <h1>BACK END</h1>
+              <div className="skill-desc-container-content-svg-container">
+                <div>
+                  <MySQL className="svg-logo" />
+                  <p> mySQL</p>
+                </div>
+                <div>
+                  <MongoDB className="svg-logo" />
+                  <p> MongoDB</p>
+                </div>
+                <div>
+                  <NodeJS className="svg-logo" />
+                  <p> NodeJS</p>
+                </div>
+                <div>
+                  <SocketIO className="svg-logo" />
+                  <p> SocketIO</p>
+                </div>
+                <div>
+                  <JWT className="svg-logo" />
+                  <p> JWT</p>
+                </div>
+                <div>
+                  <GraphQL className="svg-logo" />
+                  <p> GraphQL (Learning)</p>
+                </div>
+              </div>
+            </div>
+            <div className="skill-desc-container-content" style={{backgroundColor : "#dfdbd8"}}>
+              <h1>TOOLS</h1>
+              <div className="skill-desc-container-content-svg-container">
+                <div>
+                  <Git className="svg-logo" />
+                  <p> Git</p>
+                </div>
+                <div>
+                  <Figma className="svg-logo" />
+                  <p> Figma</p>
+                </div>
+                <div>
+                  <Trello className="svg-logo" />
+                  <p> Trello</p>
+                </div>
+                <div>
+                  <Jira className="svg-logo" />
+                  <p> Jira</p>
+                </div>
+                <div>
+                  <Photoshop className="svg-logo" />
+                  <p> Photoshop (Learning)</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </React.Fragment>

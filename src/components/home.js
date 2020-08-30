@@ -13,25 +13,30 @@ class Home extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="home-container" data-aos="fade-out" data-aos-duration="3000">
+        <div
+          className="home-container"
+       
+        >
           {/* <h1 className="container-title">Welcome to my portfolio</h1> */}
           <div className="outer-layer">
-            <div className="clip-text">Thomas.Q</div>
+            <div className="clip-text">Thanh Quan </div>
           </div>
-          <button onClick={this.openSlide} id="sliderToggle">
-              <input type="checkbox" />
+          <h1 className="home-container-subtitle">Junior Software Developer</h1>
 
-              {/* Left */}
-              <div className="left-wing">
-                <span></span>
-                <span></span>
-              </div>
-              {/* Right */}
-              <div className="right-wing">
-                <span></span>
-                <span></span>
-              </div>
-            </button>
+          <button onClick={this.openSlide} id="sliderToggle">
+            <input type="checkbox" />
+
+            {/* Left */}
+            <div className="left-wing">
+              <span></span>
+              <span></span>
+            </div>
+            {/* Right */}
+            <div className="right-wing">
+              <span></span>
+              <span></span>
+            </div>
+          </button>
         </div>
       </React.Fragment>
     );
