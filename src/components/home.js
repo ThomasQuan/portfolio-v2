@@ -27,7 +27,7 @@ class Home extends Component {
                 Junior Full Stack Developer
               </h1>
             </div>
-            <div data-aos="fade-up" data-aos-delay="1300" className="subtitle-container">
+            <div data-aos="fade-up" data-aos-delay="1700" className="subtitle-container">
               <h3>
                 I help design and developer the ideas website &amp; application
                 that the company.

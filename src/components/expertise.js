@@ -16,13 +16,11 @@ class Expertise extends Component {
               “Live as if you were to die tomorrow. Learn as if you were to live
               forever.” ― Mahatma Gandhi
             </h4>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries,
-            </p>
+            <h4 style={{marginTop:'5vh'}}>
+              As a Junior Full Stack Developer, I am aiming to master and apply
+              all the essential tools and skills that I have acquired to design
+              and develop the perfect project for my client.
+            </h4>
           </div>
           <div className="skill-container">
             <div data-aos="flip-left" className="skill-container-item">
@@ -40,7 +38,11 @@ class Expertise extends Component {
                 NativeScript,Redux
               </span>
             </div>
-            <div data-aos="flip-left" data-aos-delay="300" className="skill-container-item">
+            <div
+              data-aos="flip-left"
+              data-aos-delay="300"
+              className="skill-container-item"
+            >
               <Server className="svg-icon" />
               <h3> Back-End Development </h3>
               <p>
@@ -56,7 +58,11 @@ class Expertise extends Component {
                 Java, C#, Python, NodeJS, Express.js, MongoDB, MySQL, JWT
               </span>
             </div>
-            <div data-aos="flip-left" data-aos-delay="500" className="skill-container-item">
+            <div
+              data-aos="flip-left"
+              data-aos-delay="500"
+              className="skill-container-item"
+            >
               <ColorWheel className="svg-icon" />
               <h3> UX/UI Design </h3>
               <p>
@@ -69,7 +75,11 @@ class Expertise extends Component {
               </p>
               <span>Photoshop, Inkscape, Figma</span>
             </div>
-            <div data-aos="flip-left" data-aos-delay="700" className="skill-container-item">
+            <div
+              data-aos="flip-left"
+              data-aos-delay="700"
+              className="skill-container-item"
+            >
               <Tools className="svg-icon" />
               <h3> Others </h3>
               <p>

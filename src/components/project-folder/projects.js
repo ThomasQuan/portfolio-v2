@@ -64,9 +64,9 @@ const Projects = () => {
     <React.Fragment>
       <div className="projects" id="projects">
         <h1>PROJECTS</h1>
-        <h3>
+        <h4>
           Here are some of my projects that I have had the chance to work on
-        </h3>
+        </h4>
         <div className="projects-container">
           {_projects.map((p, idx) => (
             <div data-aos-delay='' key={idx} className={`project ${p.backgroundImg}`}>
