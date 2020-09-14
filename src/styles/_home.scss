@@ -6,78 +6,164 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  background-image: url(../assets/forest.jpg);
+  background-image: url("https://images.unsplash.com/photo-1490131784822-b4626a8ec96a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-repeat: no-repeat;
   background-size: cover;
-  z-index: 0;
-}
+  background-position: bottom;
+  min-height: 500px;
+  background-attachment: fixed;
+  justify-content: center;
 
-.clip-text {
-  font-size: 5em;
-  font-weight: bold;
-  line-height: 1;
-  position: relative;
-  display: inline-block;
-  margin: 0.25em;
-  padding: 0.5em 0.75em;
   text-align: center;
-  /* Color fallback */
-  color: #fff;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-image: url(../assets/toronto-large.jpg);
 }
-
-.clip-text:before,
-.clip-text:after {
-  position: absolute;
-  content: "";
-}
-
-/* Background */
-.clip-text:before {
-  z-index: -2;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: inherit;
-}
-
-/* Text Background (black zone) */
-.clip-text:after {
-  position: absolute;
-  z-index: -1;
-  top: 0.2em;
-  right: 0.2em;
-  bottom: 0.2em;
-  left: 0.2em;
-  background-color: $primary-color;
-}
-
-.home-container-subtitle {
-  color: $secondary-color;
-}
-
-
-@media only screen and (max-width: 400px) {
-  .clip-text {
-    font-size: 3rem;
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
   }
 }
-@media only screen and (max-width: 450px) {
-  .container-title {
-    top: 5vh;
-    font-size: 2.5rem;
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #1f1f1f;
   }
 }
-#sliderToggle {
+.svgName {
+  width: 700px;
+  animation: fill 0.5s ease forwards 1.5s;
+}
+
+.svgName path:nth-child(2) {
+  stroke-dasharray: 490;
+  stroke-dashoffset: 490;
+  animation: line-anim 2s ease forwards;
+}
+.svgName path:nth-child(3) {
+  stroke-dasharray: 712;
+  stroke-dashoffset: 712;
+  animation: line-anim 2s ease forwards 0.1s;
+}
+.svgName path:nth-child(4) {
+  stroke-dasharray: 573;
+  stroke-dashoffset: 573;
+  animation: line-anim 2s ease forwards 0.6s;
+}
+.svgName path:nth-child(5) {
+  stroke-dasharray: 728;
+  stroke-dashoffset: 728;
+  animation: line-anim 2s ease forwards 0.6s;
+}
+.svgName path:nth-child(6) {
+  stroke-dasharray: 728;
+  stroke-dashoffset: 728;
+  animation: line-anim 2s ease forwards 0.6s;
+}
+.svgName path:nth-child(7) {
+  stroke-dasharray: 712;
+  stroke-dashoffset: 712;
+  animation: line-anim 2s ease forwards 0.6s;
+}
+.svgName path:nth-child(8) {
+  stroke-dasharray: 756;
+  stroke-dashoffset: 756;
+  animation: line-anim 2s ease forwards 0.6s;
+}
+.svgName path:nth-child(9) {
+  stroke-dasharray: 649;
+  stroke-dashoffset: 649;
+  animation: line-anim 2s ease forwards 0.6s;
+}
+.svgName path:nth-child(10) {
+  stroke-dasharray: 728;
+  stroke-dashoffset: 728;
+  animation: line-anim 2s ease forwards 0.6s;
+}
+
+@keyframes showText {
+  from {
+    color: transparent;
+  }
+  to {
+    color: #1f1f1f;
+  }
+}
+
+.home-content {
+  margin-top: 10vh;
+  margin-bottom: 15vh;
+  height: auto;
   display: flex;
-  position: absolute;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  > .home-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    > h1 {
+      font-size: 2rem;
+      font-weight: normal;
+      margin-bottom: 10vh;
+      color: transparent;
+      animation: showText 2s ease-in-out forwards 2s;
+    }
+  }
+  > .subtitle-container {
+    width: 50vw;
+    > h3 {
+      margin-top: 2rem;
+
+    }
+  }
+}
+@media only screen and (max-width: 900px) {
+  .svgName {
+    width: 450px;
+    height: max-content;
+  }
+  .home-container {
+    height: auto;
+  }
+  .home-content {
+    text-align: center;
+    flex-direction: column;
+    > .home-title {
+      > h1 {
+        font-size: 1.5rem;
+      }
+    }
+    > .subtitle-container {
+      width: 90vw;
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .svgName {
+    width: 90vw;
+  }
+  .home-content {
+    > .home-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      > h1 {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+#sliderToggle {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  display: flex;
+  align-items: center;
+  width: 60px;
+  height: 50px;
   bottom: 7vh;
-  height: 8vh;
   border-radius: 50%;
   border: transparent;
   background: transparent;
@@ -86,12 +172,11 @@
 #sliderToggle input {
   position: absolute;
   display: block;
-  width: 77px;
-  height: 75.75px;
-  margin: 0;
+  width: inherit;
+  height: inherit;
   cursor: pointer;
-  opacity: 0; 
-  z-index: 3; 
+  opacity: 0;
+  z-index: 3;
 
   -webkit-touch-callout: none;
 }

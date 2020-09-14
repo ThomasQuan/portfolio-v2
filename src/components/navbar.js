@@ -7,7 +7,7 @@ $(document).ready(function () {
     if ($(window).scrollTop() > window.innerHeight) {
       $(".nav").addClass("navbar-fixed");
     }
-    if ($(window).scrollTop() < 947) {
+    if ($(window).scrollTop() < window.innerHeight) {
       $(".nav").removeClass("navbar-fixed");
     }
   });

@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
 import NavBar from "./components/navbar";
 import Home from "./components/home";
-import AboutMe from "./components/aboutme";
+import About from "./components/aboutme";
+
 import Expertise from "./components/expertise";
 import Projects from "./components/project-folder/projects";
 import Contact from "./components/contact";
@@ -24,11 +24,13 @@ function App() {
       <Router>
         <Switch>
           <Route path="/" exact>
-            <Home></Home>
+            <Home ></Home>
             <NavBar></NavBar>
-            <AboutMe></AboutMe>
+            <div className='gap'></div>
+            <About></About>
             <Expertise></Expertise>
             <Projects></Projects>
+
             <Contact></Contact>
           </Route>
           <Route path="*" component={NotFound}></Route>

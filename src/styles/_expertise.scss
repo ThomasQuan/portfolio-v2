@@ -1,57 +1,79 @@
 .skill {
   width: 100vw;
-  height: max-content;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
-  text-align: left;
   align-items: center;
+  text-align: center;
   &-header {
-    text-align: center;
+    width: 50vw;
+    color: $background-color;
+    margin: 5vh 0 5vh 0;
+    >p{
+      margin-top: 5vh;
+    }
   }
-  &-desc-container {
-    margin-top: 5vh;
-    width: 95vw;
+  &-container {
+    width: 100vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    &-content {
-      > h1 {
-        border-bottom: solid $forest-color 2px;
-        margin-bottom: 4vh;
-      }
-      border: solid $forest-color 2px;
-      border-radius: 5px;
-      text-align: center;
-      width: 70vw;
+    align-items: center;
+
+    &-item {
       display: flex;
       flex-direction: column;
       align-items: center;
-      &-svg-container {
-        width: 70vw;
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        > div {
-          width: max-content;
-          margin: auto;
-          height: max-content;
-          text-align: center;
-          > .svg-logo {
-            width: 3rem;
-            height: 3rem;
-          }
-        }
+      width: 20vw;
+      height: 50vh;
+      margin: 5vh 0 5vh 0;
+      border-radius: 10px;
+      background: #131313;
+      box-shadow:  1px 1px 5px #161616, 
+                   -3px -3px 5px #0a0a0a;
+      color: $background-color;
+      >h3{
+        margin-bottom: 3vh;
+      }
+      >span{
+        color: $honey-color;
+        width: inherit;
+        margin: auto 0 2vh 0;
+        padding: 0 2vw 0 2vw;
+
       }
     }
   }
 }
-@media only screen and (max-width: 750px) {
-  .skill-desc-container-content{
+
+.svg-icon{
+  width: 4rem;
+  height: 4rem;
+  margin: 3vh 0 3vh 0;
+}
+@media only screen and (max-width: 1080px) {
+
+  .skill-container {
+    width: 90vw;
+    text-align: center;
+  }
+  .skill-container-item {
+    width: 40vw;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .skill-header {
     width: 95vw;
   }
-  .skill-desc-container-content-svg-container{
-    width: 95vw;
+  .skill-container {
+    width: 100vw;
+  }
+  .skill-container-item {
+    height: max-content;
+    width: 80vw;
+    >span{
+      margin-top: 5vh ;
+    }
   }
 }

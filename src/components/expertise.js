@@ -1,22 +1,8 @@
 import React, { Component } from "react";
-import { ReactComponent as JS } from "../assets/svg/javascript.svg";
-import { ReactComponent as JQuery } from "../assets/svg/jquery.svg";
-import { ReactComponent as Angular } from "../assets/svg/angular.svg";
-import { ReactComponent as Sass } from "../assets/svg/sass.svg";
-import { ReactComponent as Bootstrap } from "../assets/svg/bootstrap-4.svg";
-import { ReactComponent as ReactLogo } from "../assets/svg/react.svg";
-import { ReactComponent as MySQL } from "../assets/svg/mysql.svg";
-import { ReactComponent as MongoDB } from "../assets/svg/mongodb.svg";
-import { ReactComponent as NodeJS } from "../assets/svg/nodejs.svg";
-import { ReactComponent as SocketIO } from "../assets/svg/socket-io.svg";
-import { ReactComponent as JWT } from "../assets/svg/jwt.svg";
-import { ReactComponent as GraphQL } from "../assets/svg/graphql.svg";
-import { ReactComponent as MaterialUI } from "../assets/svg/material-ui.svg";
-import { ReactComponent as Git } from "../assets/svg/git.svg";
-import { ReactComponent as Figma } from "../assets/svg/figma.svg";
-import { ReactComponent as Trello } from "../assets/svg/trello.svg";
-import { ReactComponent as Jira } from "../assets/svg/jira.svg";
-import { ReactComponent as Photoshop } from "../assets/svg/photoshop-cc.svg";
+import { ReactComponent as Computer } from "../assets/svg/computer.svg";
+import { ReactComponent as Server } from "../assets/svg/server.svg";
+import { ReactComponent as ColorWheel } from "../assets/svg/color-wheel.svg";
+import { ReactComponent as Tools } from "../assets/svg/tools.svg";
 
 class Expertise extends Component {
   state = {};
@@ -25,96 +11,76 @@ class Expertise extends Component {
       <React.Fragment>
         <div className="skill" id="skill">
           <div className="skill-header">
-            <h1>TECHNOLOGY</h1>
-            <h3>Programming Languages, Framework &amp; Library, Tools</h3>
+            <h1>Skills &amp; Passion</h1>
+            <h4>
+              “Live as if you were to die tomorrow. Learn as if you were to live
+              forever.” ― Mahatma Gandhi
+            </h4>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries,
+            </p>
           </div>
-          <div className="skill-desc-container">
-            <div className="skill-desc-container-content" style={{backgroundColor : "#d8b26e"}}>
-              <h1>FRONT END</h1>
-              <div className="skill-desc-container-content-svg-container">
-                <div>
-                  <JS className="svg-logo" />
-                  <p> JavaScript </p>
-                </div>
-                <div>
-                  <JQuery className="svg-logo" />
-                  <p> jQuerry </p>
-                </div>
-                <div>
-                  <Angular className="svg-logo" />
-                  <p> Angular</p>
-                </div>
-                <div>
-                  <Sass className="svg-logo" />
-                  <p> Sasss</p>
-                </div>
-                <div>
-                  <Bootstrap className="svg-logo" />
-                  <p> Bootstrap</p>
-                </div>
-                <div>
-                  <ReactLogo className="svg-logo" />
-                  <p> React</p>
-                </div>
-                <div>
-                  <MaterialUI className="svg-logo" />
-                  <p> Material UI</p>
-                </div>
-              </div>
+          <div className="skill-container">
+            <div data-aos="flip-left" className="skill-container-item">
+              <Computer className="svg-icon" />
+
+              <h3> Front-End Development </h3>
+              <p>
+                I enjoy turning the ideas, the design of the client into life,
+                in a user-friendly, responsive way. Implementing a wide range of
+                tools, frameworks, or libraries that I have gained experiences
+                on.
+              </p>
+              <span>
+                HTML,CSS,SASS,jQuery,JavaScript, TypeScript,React,Angular,
+                NativeScript,Redux
+              </span>
             </div>
-            <div className="skill-desc-container-content" style={{backgroundColor : "#b477759c"}}>
-              <h1>BACK END</h1>
-              <div className="skill-desc-container-content-svg-container">
-                <div>
-                  <MySQL className="svg-logo" />
-                  <p> mySQL</p>
-                </div>
-                <div>
-                  <MongoDB className="svg-logo" />
-                  <p> MongoDB</p>
-                </div>
-                <div>
-                  <NodeJS className="svg-logo" />
-                  <p> NodeJS</p>
-                </div>
-                <div>
-                  <SocketIO className="svg-logo" />
-                  <p> SocketIO</p>
-                </div>
-                <div>
-                  <JWT className="svg-logo" />
-                  <p> JWT</p>
-                </div>
-                <div>
-                  <GraphQL className="svg-logo" />
-                  <p> GraphQL (Learning)</p>
-                </div>
-              </div>
+            <div data-aos="flip-left" data-aos-delay="300" className="skill-container-item">
+              <Server className="svg-icon" />
+              <h3> Back-End Development </h3>
+              <p>
+                {/* A beautify website or application isn't the main reason why website thrive and drive users in much
+                if it's missing backbone - server. As much as I enjoy delivery
+                the client design and help bringing them to life, I also enjoy
+                taking my skill as a developer to work on the back-end side, */}
+                Working as a back-end developer really brought me the
+                opportunity to work on, optimize and secure the flow of the
+                website data - ensuring the best performances for the website.
+              </p>
+              <span>
+                Java, C#, Python, NodeJS, Express.js, MongoDB, MySQL, JWT
+              </span>
             </div>
-            <div className="skill-desc-container-content" style={{backgroundColor : "#dfdbd8"}}>
-              <h1>TOOLS</h1>
-              <div className="skill-desc-container-content-svg-container">
-                <div>
-                  <Git className="svg-logo" />
-                  <p> Git</p>
-                </div>
-                <div>
-                  <Figma className="svg-logo" />
-                  <p> Figma</p>
-                </div>
-                <div>
-                  <Trello className="svg-logo" />
-                  <p> Trello</p>
-                </div>
-                <div>
-                  <Jira className="svg-logo" />
-                  <p> Jira</p>
-                </div>
-                <div>
-                  <Photoshop className="svg-logo" />
-                  <p> Photoshop (Learning)</p>
-                </div>
-              </div>
+            <div data-aos="flip-left" data-aos-delay="500" className="skill-container-item">
+              <ColorWheel className="svg-icon" />
+              <h3> UX/UI Design </h3>
+              <p>
+                As a developer with a keen eye, and interest for design aspect,
+                I really enjoy learning and utilizing my skills in UX/UI design
+                for building mockup, wireframe, prototypes, materials design.
+                Bringing a mean of communication with my clients to better
+                understand their problem &amp; needs so that I can provide the
+                best solution for their products.
+              </p>
+              <span>Photoshop, Inkscape, Figma</span>
+            </div>
+            <div data-aos="flip-left" data-aos-delay="700" className="skill-container-item">
+              <Tools className="svg-icon" />
+              <h3> Others </h3>
+              <p>
+                Aside from developing and designing the website, I also took
+                interest in working with other assets such as project management
+                tools, DevOps, mobile development or even Machine Learning &amp;
+                Data Analyst.
+              </p>
+              <span>
+                Trello, Slack, Git, Travis-CI, Machine Learning, Data Analyst.
+              </span>
             </div>
           </div>
         </div>

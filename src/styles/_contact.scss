@@ -1,15 +1,19 @@
 .contact {
-  margin-top: 2vh;
   width: 100vw;
   height: auto;
   display: flex;
   justify-content: center;
-  text-align: left;
   align-items: center;
   flex-direction: column;
-  >h1{
+  padding: 10vh 0 10vh 0;
+  color: $secondary-color;
+  > h1 {
+    font-size: 3rem;
     text-align: center;
-    border-bottom: solid $forest-color 2px;
+    border-bottom: solid $background-color 2px;
+  }
+  > h4 {
+    text-align: center;
   }
 }
 .form {
@@ -21,6 +25,14 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+.form-control {
+  border: none;
+  border-color: transparent;
+  border-radius: 5px;
+  background: #1b1b1b;
+  box-shadow: 3px 3px 5px #161616, -5px -5px 5px #0a0a0a;
+}
+
 .form-image {
   margin-top: auto;
   margin-bottom: auto;
@@ -38,18 +50,20 @@
   margin-right: 5vw;
 }
 .form-link {
-  width: 50vw;
+  width: 40vw;
   margin-top: 2vh;
   display: flex;
   justify-content: space-around;
-  >a{
-    color: $forest-color;
+  > a {
+    text-align: center;
+    color: $secondary-color;
   }
-  >a:hover{
+  > a:hover {
     color: $honey-color;
   }
 }
 .form-group {
+  font-size: 1.5rem;
   > textarea {
     height: 30vh;
   }
@@ -66,6 +80,30 @@
 .btn-submit:hover {
   background-color: black;
 }
+.react-confirm-alert{
+  width: 30vw;
+}
+.react-confirm-alert-overlay{
+  background-color: rgba(39, 39, 39, 0.671);
+}
+
+.react-confirm-alert-body {
+  font-size: 1.5rem;
+  color: #161616;
+  width: inherit;
+  text-align: center;
+}
+.react-confirm-alert-button-group {
+  display: flex;
+  justify-content: center;
+  > button {
+    width: 20vw;
+  }
+}
+.sbm-img {
+  width: 25vw;
+  height: 50vh;
+}
 @media only screen and (max-width: 930px) {
   .form {
     flex-direction: column;
@@ -80,5 +118,29 @@
   }
   .form-link {
     width: 90vw;
+  }
+
+  .react-confirm-alert{
+    width: 80vw;
+  }
+  .react-confirm-alert-overlay{
+    background-color: rgba(39, 39, 39, 0.671);
+  }
+  
+  .react-confirm-alert-body {
+    
+    width: inherit;
+    text-align: center;
+  }
+  .react-confirm-alert-button-group {
+    display: flex;
+    justify-content: center;
+    > button {
+      width: 80vw;
+    }
+  }
+  .sbm-img {
+    width: 70vw;
+    height: 30vh;
   }
 }

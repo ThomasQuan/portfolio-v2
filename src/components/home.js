@@ -1,7 +1,11 @@
 import React, { Component } from "react";
+import { ReactComponent as ThanhQuanSVG } from "../assets/svg/thanh_quan.svg";
+
 import $ from "jquery";
 class Home extends Component {
+
   state = {};
+  
   openSlide = () => {
     $([document.documentElement, document.body]).animate(
       {
@@ -10,18 +14,26 @@ class Home extends Component {
       750
     );
   };
+
   render() {
+
     return (
       <React.Fragment>
-        <div
-          className="home-container"
-       
-        >
-          {/* <h1 className="container-title">Welcome to my portfolio</h1> */}
-          <div className="outer-layer">
-            <div className="clip-text">Thanh Quan </div>
+        <div  className="home-container">
+          <div className="home-content">
+            <div className="home-title">
+              <ThanhQuanSVG className='svgName evangelion-font evangelion-text-shadwo'  />
+              <h1  className='evangelion-font' >
+                Junior Full Stack Developer
+              </h1>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="1300" className="subtitle-container">
+              <h3>
+                I help design and developer the ideas website &amp; application
+                that the company.
+              </h3>
+            </div>
           </div>
-          <h1 className="home-container-subtitle">Junior Software Developer</h1>
 
           <button onClick={this.openSlide} id="sliderToggle">
             <input type="checkbox" />
