@@ -30,7 +30,7 @@ class Home extends Component {
             <div data-aos="fade-up" data-aos-delay="1700" className="subtitle-container">
               <h3>
                 I help design and developer the ideas website &amp; application
-                that the company.
+                that the company want.
               </h3>
             </div>
           </div>
