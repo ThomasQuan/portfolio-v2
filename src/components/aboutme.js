@@ -8,29 +8,22 @@ class AboutMe extends Component {
     return (
       <React.Fragment>
         <div className="about-me" id="about-me">
-          <div  className="about-me-container">
-            <h1>
-              "The measure of intelligence is the ability to change." 
-              <br/>— Albert
-              Einstein
-            </h1>
+          <div className="about-me-container">
+            <h1>A LITTLE ABOUT ME.</h1>
+            <h2>
+              "The measure of intelligence is the ability to change."
+              <br />— Albert Einstein
+            </h2>
             <p>
-              Web design and development are my passion! I am a driven Junior
-              Developer dedicated to perfecting my applicational design and
-              development following best practices and implementations.
-              <br />
-              <br />
-              My greatest strength is my adaptability – to always be ready to
-              embrace new trends and technologies. As a young energetic and
-              enthusiastic problem solver, I continuously search for new tactics
-              or implementations for me to learn and practice on to better
-              myself for the current or future position.
-              <br />
-              <br />
-              As a team member for any given project, I always try my best to
-              become a reliable team member. Providing excellent management for
-              project roadmap and deadline, conducting weekly or daily meetings
-              to keep everyone up to date on the current state.
+              Designing and developing the state-of-the-art, user-friendly,
+              responsive application is a mission of mine. Always actively
+              seeking out new technologies, learning material and staying up to
+              date with the industry trend and advancements. Rendering me to
+              become a candidate that is constantly ready to step out of the
+              comfort zone to embrace and work on new and exciting technologies
+              along with being able to deliver exceptional results. Willing to
+              put in the extra time to learn and work on new and exciting
+              technologies that are required for current trend of the client.
             </p>
           </div>
         </div>

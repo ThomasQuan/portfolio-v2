@@ -23,6 +23,7 @@
     &-item {
       display: flex;
       flex-direction: column;
+      
       align-items: center;
       width: 20vw;
       height: 50vh;
@@ -35,11 +36,11 @@
       >h3{
         margin-bottom: 3vh;
       }
-      >span{
+      >p{
         color: $honey-color;
-        width: inherit;
-        margin: auto 0 2vh 0;
-        padding: 0 2vw 0 2vw;
+        width: auto;
+        margin: auto 0 auto 0;
+        padding: 0 ;
 
       }
     }

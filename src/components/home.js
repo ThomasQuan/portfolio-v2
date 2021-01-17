@@ -29,8 +29,7 @@ class Home extends Component {
             </div>
             <div data-aos="fade-up" data-aos-delay="1700" className="subtitle-container">
               <h3>
-                I help design and developer the ideas website &amp; application
-                that the company want.
+                I help make your ideas into reality.
               </h3>
             </div>
           </div>
@@ -49,6 +48,7 @@ class Home extends Component {
               <span></span>
             </div>
           </button>
+          
         </div>
       </React.Fragment>
     );

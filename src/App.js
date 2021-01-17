@@ -12,7 +12,6 @@ import "aos/dist/aos.css";
 import "./App.scss";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NotFound from "./components/notfound";
-
 function App() {
   useEffect(() => {
     AOS.init({
@@ -24,9 +23,8 @@ function App() {
       <Router>
         <Switch>
           <Route path="/" exact>
-            <Home ></Home>
+            <Home></Home>
             <NavBar></NavBar>
-            <div className='gap'></div>
             <About></About>
             <Expertise></Expertise>
             <Projects></Projects>
