@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import ErrorMessage from "./error";
 import { ReactComponent as ContactIllustration } from "../assets/svg/undraw_contact_us_15o2.svg";
 import { ReactComponent as ConfirmMessageIllustration } from "../assets/svg/undraw_message_sent_1030.svg";
-import resume from "../resume.pdf";
+import resume from "../Thanh Quan Resume.pdf";
 import { confirmAlert } from "react-confirm-alert"; // Import
 import "react-confirm-alert/src/react-confirm-alert.css";
 
