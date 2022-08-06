@@ -43,13 +43,14 @@ const Contact = () => {
           interest in working on the things I like.
         </h4>
         <div className="form-link">
-          <a href="https://github.com/ThomasQuan" target="_blank">
+          <a href="https://github.com/ThomasQuan" target="_blank" rel="noreferrer">
             <i className="fab fa-github fa-2x"></i>
             <p>GitHub</p>
           </a>
           <a
             href="https://www.linkedin.com/in/thanh-quan-355912169/"
             target="_blank"
+            rel="noreferrer"
           >
             <i className="fab fa-linkedin-in fa-2x"></i>
             <p>LinkedIn</p>
@@ -61,7 +62,7 @@ const Contact = () => {
             <i className="far fa-envelope fa-2x"></i>
             <p>Gmail</p>
           </a>
-          <a href={resume} target="_blank">
+          <a href={resume} target="_blank" rel="noreferrer">
             <i class="far fa-file fa-2x"></i>
             <p>Resume</p>
           </a>
